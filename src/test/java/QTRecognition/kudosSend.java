@@ -41,7 +41,7 @@ public class kudosSend  extends base {
 		Thread.sleep(1000);
 		
 		k.email().click();
-		k.email().sendKeys("anupam.ajith@qualitestgroup.com");
+		k.email().sendKeys("prasad.bembde@qualitestgroup.com");
 		Robot r =new Robot();
 		r.delay(1000);
 		r.keyPress(KeyEvent.VK_DOWN);
@@ -55,8 +55,9 @@ public class kudosSend  extends base {
 		k.cardv().click();
 		k.commentv().sendKeys("Good Work");
 		k.sendv().click();
-		r.delay(1000);
-		
+		r.delay(15000);
+		String str = dri.findElement(By.xpath("//form[@name='shoutout_form']/div[2]/div/span/center")).getText();
+		System.out.println(str);
 	if(	dri.findElement(By.xpath("//form[@name='shoutout_form']/div[2]/div/span/center")).getText().equalsIgnoreCase("Mailer Error: SMTP connect() failed."))
 	{
 		Assert.assertTrue(false);
@@ -64,8 +65,8 @@ public class kudosSend  extends base {
 		
 		r.delay(1000);
 	}
-	 @AfterTest 
+	 @AfterClass 
 	 public void exit() {
 		 dri.close();
-	 }
+      }
 }

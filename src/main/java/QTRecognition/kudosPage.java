@@ -12,6 +12,7 @@ public class kudosPage {
 	By card = By.xpath("//div[@id='trophy_list']/div[1]/div/div");
 	By comment = By.xpath("//textarea[@id='comment']");
 	By send= By.xpath("//div[@class='modal-footer']/button[2]");
+	By cancel =By.xpath("//div[@class='modal-footer']/button[1]");
 	
 	public kudosPage(WebDriver dri) {
 		Driver=dri;
@@ -36,4 +37,7 @@ public class kudosPage {
 		return Driver.findElement(send);
 	}
 	
+	public WebElement canclev() {
+		return Driver.findElement(cancel);
+	}
 }

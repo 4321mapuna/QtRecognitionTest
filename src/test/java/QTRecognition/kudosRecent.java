@@ -18,7 +18,9 @@ public class kudosRecent extends base{
 	@Test
 	public void kudosrecentv() throws IOException, InterruptedException {
 		dri=intial();
-		dri.get("https://qtrecognition.testqtwiz.com/");
+		
+		dri.get(prop.getProperty("url"));
+		
 		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
 		dri.findElement(pass).sendKeys("P@ssw0rd");
 		dri.findElement(login).click();

@@ -32,7 +32,7 @@ public class kudosSearch extends base {
 		 log.info("intialising");
 		 log.debug("heeeloooo");
 		 log.error("hey");
-			dri.get("https://qtrecognition.testqtwiz.com/");
+			dri.get(prop.getProperty("url"));
 			
 			dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
 			dri.findElement(pass).sendKeys("P@ssw0rd");
@@ -53,6 +53,8 @@ public class kudosSearch extends base {
 			r.keyRelease(KeyEvent.VK_ENTER);
 			r.delay(1000);
 			a.searchb().click();
+			
+			
 	 }
 	 
 	 @AfterClass

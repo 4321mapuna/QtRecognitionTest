@@ -1,44 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="5" passed="3">
+<testng-results skipped="0" failed="2" ignored="0" total="7" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="67234" started-at="2021-10-20T09:51:55 IST" finished-at="2021-10-20T09:53:02 IST">
+  <suite name="Suite" duration-ms="137432" started-at="2021-10-21T02:06:28 IST" finished-at="2021-10-21T02:08:45 IST">
     <groups>
     </groups>
-    <test name="Test" duration-ms="67234" started-at="2021-10-20T09:51:55 IST" finished-at="2021-10-20T09:53:02 IST">
-      <class name="QTRecognition.others">
-        <test-method status="FAIL" signature="other()[pri:0, instance:QTRecognition.others@67d48005]" name="other" duration-ms="18462" started-at="2021-10-20T09:52:12 IST" finished-at="2021-10-20T09:52:31 IST">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
-            <message>
-              <![CDATA[element click intercepted: Element <a href="javascript:void(0)" onclick="getRecentKudos()">...</a> is not clickable at point (127, 220). Other element would receive the click: <div class="card-body effect-body" onclick="select_trophy(&quot;ct_5&quot;,&quot;5&quot;)">...</div>
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2COP05S', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0518738e0b9164794d9c7335f815ad02]]>
-            </message>
+    <test name="Test" duration-ms="137432" started-at="2021-10-21T02:06:28 IST" finished-at="2021-10-21T02:08:45 IST">
+      <class name="QTRecognition.login">
+        <test-method status="PASS" signature="verify()[pri:0, instance:QTRecognition.login@42eca56e]" name="verify" duration-ms="13725" started-at="2021-10-21T02:06:28 IST" finished-at="2021-10-21T02:06:42 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify -->
+        <test-method status="FAIL" signature="verifyColour()[pri:0, instance:QTRecognition.login@42eca56e]" name="verifyColour" duration-ms="3717" started-at="2021-10-21T02:06:42 IST" finished-at="2021-10-21T02:06:46 IST">
+          <exception class="junit.framework.AssertionFailedError">
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="javascript:void(0)" onclick="getRecentKudos()">...</a> is not clickable at point (127, 220). Other element would receive the click: <div class="card-body effect-body" onclick="select_trophy(&quot;ct_5&quot;,&quot;5&quot;)">...</div>
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2COP05S', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0518738e0b9164794d9c7335f815ad02
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-at QTRecognition.others.other(others.java:67)
+              <![CDATA[junit.framework.AssertionFailedError
+at junit.framework.Assert.fail(Assert.java:47)
+at junit.framework.Assert.assertTrue(Assert.java:20)
+at junit.framework.Assert.assertTrue(Assert.java:27)
+at QTRecognition.login.verifyColour(login.java:48)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -55,61 +35,47 @@ at java.util.ArrayList.forEach(ArrayList.java:1259)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- junit.framework.AssertionFailedError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyColour -->
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.login@42eca56e]" name="exit" is-config="true" duration-ms="65" started-at="2021-10-21T02:06:46 IST" finished-at="2021-10-21T02:06:46 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exit -->
+      </class> <!-- QTRecognition.login -->
+      <class name="QTRecognition.others">
+        <test-method status="PASS" signature="other()[pri:0, instance:QTRecognition.others@561b6512]" name="other" duration-ms="24062" started-at="2021-10-21T02:08:17 IST" finished-at="2021-10-21T02:08:41 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- other -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.others@67d48005]" name="exit" is-config="true" duration-ms="101" started-at="2021-10-20T09:53:02 IST" finished-at="2021-10-20T09:53:02 IST">
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.others@561b6512]" name="exit" is-config="true" duration-ms="4217" started-at="2021-10-21T02:08:41 IST" finished-at="2021-10-21T02:08:45 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- QTRecognition.others -->
       <class name="QTRecognition.kudosSend">
-        <test-method status="FAIL" signature="kudosVerify()[pri:0, instance:QTRecognition.kudosSend@3e58a80e]" name="kudosVerify" duration-ms="4296" started-at="2021-10-20T09:51:55 IST" finished-at="2021-10-20T09:51:59 IST">
-          <exception class="org.openqa.selenium.InvalidArgumentException">
+        <test-method status="FAIL" signature="kudosVerify()[pri:0, instance:QTRecognition.kudosSend@10dba097]" name="kudosVerify" duration-ms="36874" started-at="2021-10-21T02:06:54 IST" finished-at="2021-10-21T02:07:31 IST">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[invalid argument
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2COP05S', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9847d24dd3c1c2a5304c855affa7af8]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=95.0.4638.54)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
-System info: host: 'DESKTOP-2COP05S', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_301'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9847d24dd3c1c2a5304c855affa7af8
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-at QTRecognition.kudosSend.kudosVerify(kudosSend.java:30)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -126,55 +92,50 @@ at java.util.ArrayList.forEach(ArrayList.java:1259)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.InvalidArgumentException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kudosVerify -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosSend@3e58a80e]" name="exit" is-config="true" duration-ms="4535" started-at="2021-10-20T09:52:57 IST" finished-at="2021-10-20T09:53:02 IST">
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosSend@10dba097]" name="exit" is-config="true" duration-ms="115" started-at="2021-10-21T02:07:31 IST" finished-at="2021-10-21T02:07:31 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- QTRecognition.kudosSend -->
       <class name="QTRecognition.kudosSearch">
-        <test-method status="PASS" signature="search()[pri:0, instance:QTRecognition.kudosSearch@1c742ed4]" name="search" duration-ms="18342" started-at="2021-10-20T09:52:31 IST" finished-at="2021-10-20T09:52:49 IST">
+        <test-method status="PASS" signature="search()[pri:0, instance:QTRecognition.kudosSearch@26b3fd41]" name="search" duration-ms="24285" started-at="2021-10-21T02:07:31 IST" finished-at="2021-10-21T02:07:55 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- search -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosSearch@1c742ed4]" name="exit" is-config="true" duration-ms="183" started-at="2021-10-20T09:52:49 IST" finished-at="2021-10-20T09:52:49 IST">
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosSearch@26b3fd41]" name="exit" is-config="true" duration-ms="4153" started-at="2021-10-21T02:07:55 IST" finished-at="2021-10-21T02:07:59 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- QTRecognition.kudosSearch -->
       <class name="QTRecognition.kudosRecent">
-        <test-method status="PASS" signature="kudosrecentv()[pri:0, instance:QTRecognition.kudosRecent@6379eb]" name="kudosrecentv" duration-ms="13173" started-at="2021-10-20T09:51:59 IST" finished-at="2021-10-20T09:52:12 IST">
+        <test-method status="PASS" signature="kudosrecentv()[pri:0, instance:QTRecognition.kudosRecent@7494f96a]" name="kudosrecentv" duration-ms="17729" started-at="2021-10-21T02:07:59 IST" finished-at="2021-10-21T02:08:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- kudosrecentv -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosRecent@6379eb]" name="exit" is-config="true" duration-ms="105" started-at="2021-10-20T09:52:12 IST" finished-at="2021-10-20T09:52:12 IST">
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.kudosRecent@7494f96a]" name="exit" is-config="true" duration-ms="75" started-at="2021-10-21T02:08:17 IST" finished-at="2021-10-21T02:08:17 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
       </class> <!-- QTRecognition.kudosRecent -->
       <class name="QTRecognition.Activity">
-        <test-method status="PASS" signature="activity()[pri:0, instance:QTRecognition.Activity@333d4a8c]" name="activity" duration-ms="7665" started-at="2021-10-20T09:52:49 IST" finished-at="2021-10-20T09:52:57 IST">
+        <test-method status="PASS" signature="activity()[pri:0, instance:QTRecognition.Activity@401e7803]" name="activity" duration-ms="8247" started-at="2021-10-21T02:06:46 IST" finished-at="2021-10-21T02:06:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- activity -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.Activity@333d4a8c]" name="exit" is-config="true" duration-ms="277" started-at="2021-10-20T09:52:57 IST" finished-at="2021-10-20T09:52:57 IST">
+        <test-method status="PASS" signature="exit()[pri:0, instance:QTRecognition.Activity@401e7803]" name="exit" is-config="true" duration-ms="88" started-at="2021-10-21T02:06:54 IST" finished-at="2021-10-21T02:06:54 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->

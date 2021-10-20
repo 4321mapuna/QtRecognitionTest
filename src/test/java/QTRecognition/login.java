@@ -23,7 +23,7 @@ public class login extends base{
    
 	public void verify() throws IOException, InterruptedException {
 		dri=intial();
-		dri.get("https://qtrecognition.testqtwiz.com/");
+		dri.get(prop.getProperty("url"));
 		
 		//valid user login
 		
@@ -34,7 +34,7 @@ public class login extends base{
 				
 		//(1.3)Title check 
 		Assert.assertEquals(dri.getTitle(), "QTRecognition");
-		
+		dri.close();
 	}
 		
 	public void verifyColour() throws IOException {

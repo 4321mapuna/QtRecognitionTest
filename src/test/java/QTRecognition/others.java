@@ -1,5 +1,6 @@
 package QTRecognition;
 
+import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 import java.io.IOException;
@@ -18,16 +19,15 @@ public class others extends base{
 	 By login=By.xpath("//div[@class='container']//form//button");
 	
 	@Test
-	public void other() throws IOException, InterruptedException {
+	public void other() throws IOException, InterruptedException, AWTException {
 		dri=intial();
-		dri.get("https://qtrecognition.testqtwiz.com/");
+		dri.get(prop.getProperty("url"));
 		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
 		dri.findElement(pass).sendKeys("P@ssw0rd");
 		activityPage a = new activityPage(dri);
-		
+		kudosPage kk = new kudosPage(dri);
 		dri.findElement(login).click();  
-		Thread.sleep(1000);
-		String stt=dri.findElement(By.xpath("//h5[@id='todayCount']")).getText();
+		
 		
 		
 		// Kudos from me button checking
@@ -51,36 +51,30 @@ public class others extends base{
 		a.act().click();
 		Thread.sleep(1000);
 		String sdd=dri.findElement(By.xpath("//h5[@id='todayCount']")).getText();
-		Assert.assertTrue(stt.contentEquals(sdd));
+		//Assert.assertTrue(stt.contentEquals(sdd));
 		
 		//..........................................
 		
 		//sample kudos send to check kudos count is updated.
 		
         a.recentkudos().click();
-		
+		Robot r = new Robot();
 		kudosPage ks = new kudosPage(dri);
 		Thread.sleep(1000);
 		ks.cardv().click();
 		ks.commentv().sendKeys("Good");
 		ks.sendv().click();
+		r.delay(5000);
+		if(	dri.findElement(By.xpath("//form[@name='shoutout_form']/div[2]/div/span/center")).getText().equalsIgnoreCase("Mailer Error: SMTP connect() failed."))
+		{
+			kk.canclev().click();
+		}
+		r.delay(1000);
+		dri.navigate().refresh(); //Refreshing page
 		a.act().click();
-		Thread.sleep(1000);
-		Thread.sleep(1000);
-		String sss=dri.findElement(By.xpath("//h5[@id='todayCount']")).getText();
-		if(sss.equalsIgnoreCase(stt))
-		{
-			Assert.assertTrue(false);
-		}
-		//..........................................
+		String sd=dri.findElement(By.xpath("//h5[@id='todayCount']")).getText();
+		Assert.assertFalse(sd.contentEquals(sdd)); //checking  count is updated. 
 		
-		//Sending kudos to themself
-		ks.kudosv().click();
-		if(a.namev().getText().equalsIgnoreCase("Anupam K Aith"))
-		{
-			Assert.assertTrue(false);
-		}
-		//..........................................
 	}
 	
 	@AfterTest

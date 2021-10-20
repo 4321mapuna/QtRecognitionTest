@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 2 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 2 failed,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -109,7 +109,7 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="QTRecognition.others" hash-for-method="other">other</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="QTRecognition.login" hash-for-method="verifyColour">verifyColour</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -133,7 +133,17 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="QTRecognition.others" hash-for-method="other">other</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="QTRecognition.kudosSearch" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="QTRecognition.login" hash-for-method="verify">verify</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -151,40 +161,6 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">QTRecognition.others</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="other">
-                  </a> <!-- other -->
-                  <span class="method-name">other</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a href=&quot;javascript:void(0)&quot; onclick=&quot;getRecentKudos()&quot;&gt;...&lt;/a&gt; is not clickable at point (127, 220). Other element would receive the click: &lt;div class=&quot;card-body effect-body&quot; onclick=&quot;select_trophy(&amp;quot;ct_5&amp;quot;,&amp;quot;5&amp;quot;)&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=95.0.4638.54)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-2COP05S&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:58956}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 0518738e0b9164794d9c7335f815ad02
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at QTRecognition.others.other(others.java:67)
-	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">QTRecognition.kudosSend</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -193,23 +169,41 @@ Session ID: 0518738e0b9164794d9c7335f815ad02
                   <a name="kudosVerify">
                   </a> <!-- kudosVerify -->
                   <span class="method-name">kudosVerify</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: invalid argument
-  (Session info: chrome=95.0.4638.54)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
-System info: host: &apos;DESKTOP-2COP05S&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56792}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: a9847d24dd3c1c2a5304c855affa7af8
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:30)
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
-... Removed 31 stack frames
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">QTRecognition.login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyColour">
+                  </a> <!-- verifyColour -->
+                  <span class="method-name">verifyColour</span>
+                  <div class="stack-trace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at QTRecognition.login.verifyColour(login.java:48)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 18 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -226,6 +220,36 @@ Session ID: a9847d24dd3c1c2a5304c855affa7af8
                   <a name="activity">
                   </a> <!-- activity -->
                   <span class="method-name">activity</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">QTRecognition.login</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify">
+                  </a> <!-- verify -->
+                  <span class="method-name">verify</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">QTRecognition.others</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="other">
+                  </a> <!-- other -->
+                  <span class="method-name">other</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -269,16 +293,15 @@ Session ID: a9847d24dd3c1c2a5304c855affa7af8
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; parallel=&quot;tests&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;QTRecognition.kudosSend&quot;/&gt;
-      &lt;class name=&quot;QTRecognition.kudosRecent&quot;/&gt;
-      &lt;class name=&quot;QTRecognition.base&quot;/&gt;
-      &lt;class name=&quot;QTRecognition.AppTest&quot;/&gt;
-      &lt;class name=&quot;QTRecognition.others&quot;/&gt;
-      &lt;class name=&quot;QTRecognition.kudosSearch&quot;/&gt;
+      &lt;class name=&quot;QTRecognition.login&quot;/&gt;
       &lt;class name=&quot;QTRecognition.Activity&quot;/&gt;
+      &lt;class name=&quot;QTRecognition.kudosSend&quot;/&gt;
+      &lt;class name=&quot;QTRecognition.kudosSearch&quot;/&gt;
+      &lt;class name=&quot;QTRecognition.kudosRecent&quot;/&gt;
+      &lt;class name=&quot;QTRecognition.others&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -292,7 +315,7 @@ Session ID: a9847d24dd3c1c2a5304c855affa7af8
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (7 classes)</span>
+                <span class="test-name">Test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -318,32 +341,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'other')
-data.setCell(0, 2, 'QTRecognition.others')
-data.setCell(0, 3, 18462);
+data.setCell(0, 1, 'kudosVerify')
+data.setCell(0, 2, 'QTRecognition.kudosSend')
+data.setCell(0, 3, 36874);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'search')
 data.setCell(1, 2, 'QTRecognition.kudosSearch')
-data.setCell(1, 3, 18342);
+data.setCell(1, 3, 24285);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'kudosrecentv')
-data.setCell(2, 2, 'QTRecognition.kudosRecent')
-data.setCell(2, 3, 13173);
+data.setCell(2, 1, 'other')
+data.setCell(2, 2, 'QTRecognition.others')
+data.setCell(2, 3, 24062);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'activity')
-data.setCell(3, 2, 'QTRecognition.Activity')
-data.setCell(3, 3, 7665);
+data.setCell(3, 1, 'kudosrecentv')
+data.setCell(3, 2, 'QTRecognition.kudosRecent')
+data.setCell(3, 3, 17729);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'kudosVerify')
-data.setCell(4, 2, 'QTRecognition.kudosSend')
-data.setCell(4, 3, 4296);
+data.setCell(4, 1, 'verify')
+data.setCell(4, 2, 'QTRecognition.login')
+data.setCell(4, 3, 13725);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'activity')
+data.setCell(5, 2, 'QTRecognition.Activity')
+data.setCell(5, 3, 8247);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyColour')
+data.setCell(6, 2, 'QTRecognition.login')
+data.setCell(6, 3, 3717);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -369,68 +400,77 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">QTRecognition.kudosSend</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">QTRecognition.login</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">kudosVerify</span>
+                <span class="method-name">verify</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">QTRecognition.kudosRecent</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">kudosrecentv</span>
-                <span class="method-start">4313 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">exit</span>
-                <span class="method-start">17490 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">QTRecognition.others</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">other</span>
-                <span class="method-start">17596 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">QTRecognition.kudosSearch</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">search</span>
-                <span class="method-start">36062 ms</span>
+                <span class="method-name">verifyColour</span>
+                <span class="method-start">13732 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">54406 ms</span>
+                <span class="method-start">17453 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QTRecognition.Activity</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">activity</span>
-                <span class="method-start">54590 ms</span>
+                <span class="method-start">17520 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">62257 ms</span>
+                <span class="method-start">25769 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QTRecognition.kudosSend</div> <!-- chronological-class-name -->
-              <div class="configuration-test after">
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">kudosVerify</span>
+                <span class="method-start">25857 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
                 <span class="method-name">exit</span>
-                <span class="method-start">62534 ms</span>
-              </div> <!-- configuration-test after -->
+                <span class="method-start">62733 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">QTRecognition.kudosSearch</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">search</span>
+                <span class="method-start">62849 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">exit</span>
+                <span class="method-start">87135 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">QTRecognition.kudosRecent</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">kudosrecentv</span>
+                <span class="method-start">91288 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">exit</span>
+                <span class="method-start">109019 ms</span>
+              </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">QTRecognition.others</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">other</span>
+                <span class="method-start">109094 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">exit</span>
-                <span class="method-start">67069 ms</span>
+                <span class="method-start">133160 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

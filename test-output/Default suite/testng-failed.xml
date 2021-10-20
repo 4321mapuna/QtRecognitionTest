@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="QTRecognition.kudosSend">
+      <class name="QTRecognition.kudosRecent">
         <methods>
+          <include name="kudosrecentv"/>
           <include name="exit"/>
-          <include name="kudosVerify"/>
         </methods>
-      </class> <!-- QTRecognition.kudosSend -->
+      </class> <!-- QTRecognition.kudosRecent -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
