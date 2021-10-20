@@ -25,22 +25,37 @@ public class login extends base{
 		dri=intial();
 		dri.get("https://qtrecognition.testqtwiz.com/");
 		
-		//Colour testing
-		String colour = dri.findElement(By.xpath("//div[@class='myHeading']")).getCssValue("background-color");
-		String c = Color.fromString(colour).asHex(); 
-		System.out.println(c);
-		
-		
-		
 		//valid user login
 		
 		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
 		dri.findElement(pass).sendKeys("P@ssw0rd");
 		dri.findElement(login).click();
-		
-		
+				
+				
 		//(1.3)Title check 
 		Assert.assertEquals(dri.getTitle(), "QTRecognition");
+		
+	}
+		
+	public void verifyColour() throws IOException {
+		dri=intial();
+		dri.get("https://qtrecognition.testqtwiz.com/");
+		//Colour testing
+		String colour = dri.findElement(By.xpath("//div[@class='myHeading']")).getCssValue("background-color");
+		String c = Color.fromString(colour).asHex(); 
+		String s ="#FECC160";
+		//Assert.assertEquals(c, "#FECC160");
+		Assert.assertTrue(c.contentEquals(s));
+		String colourC = dri.findElement(By.xpath("	//div[@class='container']")).getCssValue("background-color");
+		String cc = Color.fromString(colour).asHex(); 
+		String ss="#2A2559";
+		Assert.assertTrue(cc.contentEquals(ss));
+		
+		String colourCc = dri.findElement(By.xpath("//div[@class='container']/form/button")).getCssValue("background-color");
+		String ccc = Color.fromString(colour).asHex();
+		String sss="#939598";
+		Assert.assertTrue(ccc.contentEquals(sss));
+		
 	
 		
 	
