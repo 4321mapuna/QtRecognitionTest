@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 21 02:06:28 IST 2021</td>
+<td>Started on:</td><td>Thu Oct 21 09:33:52 IST 2021</td>
 </tr>
-<tr><td>Total time:</td><td>137 seconds (137432 ms)</td>
+<tr><td>Total time:</td><td>109 seconds (109427 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -86,8 +86,8 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1086343302", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1086343302'><pre>junit.framework.AssertionFailedError
+... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1938196705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1938196705'><pre>junit.framework.AssertionFailedError
 	at junit.framework.Assert.fail(Assert.java:47)
 	at junit.framework.Assert.assertTrue(Assert.java:20)
 	at junit.framework.Assert.assertTrue(Assert.java:27)
@@ -116,24 +116,62 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>3</td>
+<td>4</td>
 <td>QTRecognition.login@42eca56e</td></tr>
 <tr>
 <td title='QTRecognition.kudosSend.kudosVerify()'><b>kudosVerify</b><br>Test class: QTRecognition.kudosSend</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email_address&apos;]&quot;}
+  (Session info: chrome=95.0.4638.54)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-2COP05S&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86b4d857a97842862b8220ee75a5f2f9
+*** Element info: {Using=xpath, value=//input[@id=&apos;email_address&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at QTRecognition.kudosPage.email(kudosPage.java:26)
+	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:43)
 	at java.util.ArrayList.forEach(ArrayList.java:1259)
 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1869522451", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1869522451'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertTrue(Assert.java:45)
-	at org.testng.Assert.assertTrue(Assert.java:55)
-	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977677787", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977677787'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;email_address&apos;]&quot;}
+  (Session info: chrome=95.0.4638.54)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-2COP05S&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_301&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.54, chrome: {chromedriverVersion: 94.0.4606.61 (418b78f5838ed..., userDataDir: C:\Users\AJITHK~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:56732}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 86b4d857a97842862b8220ee75a5f2f9
+*** Element info: {Using=xpath, value=//input[@id=&apos;email_address&apos;]}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at QTRecognition.kudosPage.email(kudosPage.java:26)
+	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:43)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -158,7 +196,7 @@ function toggleAllBoxes() {
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 </pre></div></td>
-<td>36</td>
+<td>9</td>
 <td>QTRecognition.kudosSend@10dba097</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -169,30 +207,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='QTRecognition.kudosRecent.kudosrecentv()'><b>kudosrecentv</b><br>Test class: QTRecognition.kudosRecent</td>
-<td></td>
-<td>17</td>
-<td>QTRecognition.kudosRecent@7494f96a</td></tr>
-<tr>
 <td title='QTRecognition.login.verify()'><b>verify</b><br>Test class: QTRecognition.login</td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>QTRecognition.login@42eca56e</td></tr>
 <tr>
 <td title='QTRecognition.kudosSearch.search()'><b>search</b><br>Test class: QTRecognition.kudosSearch</td>
 <td></td>
-<td>24</td>
+<td>18</td>
 <td>QTRecognition.kudosSearch@26b3fd41</td></tr>
 <tr>
-<td title='QTRecognition.Activity.activity()'><b>activity</b><br>Test class: QTRecognition.Activity</td>
+<td title='QTRecognition.kudosRecent.kudosrecentv()'><b>kudosrecentv</b><br>Test class: QTRecognition.kudosRecent</td>
 <td></td>
-<td>8</td>
-<td>QTRecognition.Activity@401e7803</td></tr>
+<td>10</td>
+<td>QTRecognition.kudosRecent@7494f96a</td></tr>
 <tr>
 <td title='QTRecognition.others.other()'><b>other</b><br>Test class: QTRecognition.others</td>
 <td></td>
-<td>24</td>
+<td>27</td>
 <td>QTRecognition.others@561b6512</td></tr>
+<tr>
+<td title='QTRecognition.Activity.activity()'><b>activity</b><br>Test class: QTRecognition.Activity</td>
+<td></td>
+<td>10</td>
+<td>QTRecognition.Activity@401e7803</td></tr>
 </table><p>
 </body>
 </html>

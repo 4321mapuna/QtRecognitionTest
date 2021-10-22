@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 142.767 s <<< FAILURE! - in TestSuite
+QTRecognition.kudosSend.kudosVerify  Time elapsed: 33.524 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
+
+QTRecognition.login.verifyColour  Time elapsed: 4.082 s  <<< FAILURE!
+junit.framework.AssertionFailedError
+	at QTRecognition.login.verifyColour(login.java:48)
+

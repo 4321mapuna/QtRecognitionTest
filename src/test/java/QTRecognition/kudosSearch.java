@@ -34,8 +34,8 @@ public class kudosSearch extends base {
 		 log.error("hey");
 			dri.get(prop.getProperty("url"));
 			
-			dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-			dri.findElement(pass).sendKeys("P@ssw0rd");
+			dri.findElement(user).sendKeys(prop.getProperty("user"));
+			dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 			dri.findElement(login).click();  
 		    Thread.sleep(1000);
 			activityPage a =new  activityPage(dri);

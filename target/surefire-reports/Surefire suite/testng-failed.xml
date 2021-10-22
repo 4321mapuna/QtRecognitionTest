@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" verbose="0" name="Failed suite [Surefire suite]">
+  <test thread-count="1" verbose="0" name="Surefire test(failed)">
+    <classes>
+      <class name="QTRecognition.login">
+        <methods>
+          <include name="verifyColour"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- QTRecognition.login -->
+      <class name="QTRecognition.kudosSend">
+        <methods>
+          <include name="exit"/>
+          <include name="kudosVerify"/>
+        </methods>
+      </class> <!-- QTRecognition.kudosSend -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

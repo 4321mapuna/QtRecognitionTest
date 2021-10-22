@@ -27,8 +27,8 @@ public class login extends base{
 		
 		//valid user login
 		
-		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-		dri.findElement(pass).sendKeys("P@ssw0rd");
+		dri.findElement(user).sendKeys(prop.getProperty("user"));
+		dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 		dri.findElement(login).click();
 				
 				

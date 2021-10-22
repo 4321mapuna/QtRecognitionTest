@@ -1,6 +1,7 @@
 package QTRecognition;
 
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,12 +22,12 @@ public class kudosRecent extends base{
 		
 		dri.get(prop.getProperty("url"));
 		
-		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-		dri.findElement(pass).sendKeys("P@ssw0rd");
+		dri.findElement(user).sendKeys(prop.getProperty("user"));
+		dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 		dri.findElement(login).click();
 		Thread.sleep(1000);
 		activityPage a = new activityPage(dri);
-		
+	 
 		a.recentkudos().click();
 		
 		kudosPage k = new kudosPage(dri);

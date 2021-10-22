@@ -21,8 +21,8 @@ By login=By.xpath("//div[@class='container']//form//button");
 		
 		dri=intial();
 		dri.get(prop.getProperty("url"));
-		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-		dri.findElement(pass).sendKeys("P@ssw0rd");
+		dri.findElement(user).sendKeys(prop.getProperty("user"));
+		dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 		dri.findElement(login).click();
 	activityPage a =new activityPage(dri);
 	Assert.assertTrue(a.namev().isDisplayed());

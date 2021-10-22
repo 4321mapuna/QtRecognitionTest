@@ -9,10 +9,25 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">17</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">5</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">140,437</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">QTRecognition.AppTest</td><td><a href="#m0">testApp</a></td><td rowspan="1">1634763836517</td><td rowspan="1">4</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">QTRecognition.kudosSend</td><td><a href="#m0">kudosVerify</a></td><td rowspan="1">1634812306226</td><td rowspan="1">33311</td></tr><tr class="failedodd"><td rowspan="1">QTRecognition.login</td><td><a href="#m1">verifyColour</a></td><td rowspan="1">1634812349515</td><td rowspan="1">4062</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">QTRecognition.Activity</td><td><a href="#m2">activity</a></td><td rowspan="1">1634812253713</td><td rowspan="1">18887</td></tr><tr class="passedodd"><td rowspan="1">QTRecognition.kudosRecent</td><td><a href="#m3">kudosrecentv</a></td><td rowspan="1">1634812272787</td><td rowspan="1">13875</td></tr><tr class="passedeven"><td rowspan="1">QTRecognition.kudosSearch</td><td><a href="#m4">search</a></td><td rowspan="1">1634812286754</td><td rowspan="1">18624</td></tr><tr class="passedodd"><td rowspan="1">QTRecognition.login</td><td><a href="#m5">verify</a></td><td rowspan="1">1634812339762</td><td rowspan="1">9752</td></tr><tr class="passedeven"><td rowspan="1">QTRecognition.others</td><td><a href="#m6">other</a></td><td rowspan="1">1634812353853</td><td rowspan="1">36086</td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">QTRecognition.AppTest#testApp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Surefire test</h2><h3 id="m0">QTRecognition.kudosSend#kudosVerify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [true] but found [false]
+	at QTRecognition.kudosSend.kudosVerify(kudosSend.java:63)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">QTRecognition.login#verifyColour</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">junit.framework.AssertionFailedError
+	at junit.framework.Assert.fail(Assert.java:47)
+	at junit.framework.Assert.assertTrue(Assert.java:20)
+	at junit.framework.Assert.assertTrue(Assert.java:27)
+	at QTRecognition.login.verifyColour(login.java:48)
+	at java.util.ArrayList.forEach(Unknown Source)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">QTRecognition.Activity#activity</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">QTRecognition.kudosRecent#kudosrecentv</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">QTRecognition.kudosSearch#search</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">QTRecognition.login#verify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">QTRecognition.others#other</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

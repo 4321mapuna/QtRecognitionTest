@@ -28,7 +28,7 @@ public class base {
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\AJITHKUMAR\\eclipse-workspace\\chromedriver.exe");
 		Driver=  new ChromeDriver();
-		
+		Driver.manage().window().maximize();
 		
 		return Driver; 
 		 

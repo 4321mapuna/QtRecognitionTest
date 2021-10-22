@@ -30,19 +30,19 @@ public class kudosSend  extends base {
 		dri.get(prop.getProperty("url"));
 		
 		
-		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-		dri.findElement(pass).sendKeys("P@ssw0rd");
+		dri.findElement(user).sendKeys(prop.getProperty("user"));
+		dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 		dri.findElement(login).click();
-		
+		Robot r =new Robot();
 		kudosPage k = new kudosPage(dri);
 		//Send kudos
 		k.kudosv().click();
 		//thread used
-		Thread.sleep(1000);
+		r.delay(1000);
 		
 		k.email().click();
 		k.email().sendKeys("prasad.bembde@qualitestgroup.com");
-		Robot r =new Robot();
+		
 		r.delay(1000);
 		r.keyPress(KeyEvent.VK_DOWN);
 		r.delay(1000);

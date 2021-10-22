@@ -22,8 +22,8 @@ public class others extends base{
 	public void other() throws IOException, InterruptedException, AWTException {
 		dri=intial();
 		dri.get(prop.getProperty("url"));
-		dri.findElement(user).sendKeys("anupam.ajith@qualitestgroup.com");
-		dri.findElement(pass).sendKeys("P@ssw0rd");
+		dri.findElement(user).sendKeys(prop.getProperty("user"));
+		dri.findElement(pass).sendKeys(prop.getProperty("pass"));
 		activityPage a = new activityPage(dri);
 		kudosPage kk = new kudosPage(dri);
 		dri.findElement(login).click();  
@@ -33,15 +33,15 @@ public class others extends base{
 		// Kudos from me button checking
 		a.kudosm().click();
 		Thread.sleep(1000);
-		Assert.assertTrue(dri.findElement(By.xpath("//h3[text()='Recent Activities']")).isDisplayed());
+		Assert.assertTrue(dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/small[1]")).isDisplayed());
 		//..........................................
 		
 		//Kudos to me checking
 		a.kodosto().click();
 		Thread.sleep(1000);
-	    String st = a.namev().getText();
-		String str =dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/b[1]")).getText();
-        Assert.assertFalse(str.contentEquals(st));
+	    
+		String str =dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/small[1]")).getText();
+        Assert.assertTrue(str.contains("received an appreciation from"));
         String strKudos =dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/small[1]")).getText();
 		Assert.assertTrue(strKudos.equalsIgnoreCase("received an appreciation from"));
 		//..........................................
@@ -64,7 +64,7 @@ public class others extends base{
 		ks.cardv().click();
 		ks.commentv().sendKeys("Good");
 		ks.sendv().click();
-		r.delay(5000);
+		r.delay(10000);
 		if(	dri.findElement(By.xpath("//form[@name='shoutout_form']/div[2]/div/span/center")).getText().equalsIgnoreCase("Mailer Error: SMTP connect() failed."))
 		{
 			kk.canclev().click();
@@ -75,7 +75,40 @@ public class others extends base{
 		String sd=dri.findElement(By.xpath("//h5[@id='todayCount']")).getText();
 		Assert.assertFalse(sd.contentEquals(sdd)); //checking  count is updated. 
 		
+		//checking kudoscan be send to user himself
+		kk.kudosv().click();
+         r.delay(1000);
+		
+		kk.email().click();
+		kk.email().sendKeys("anupam.ajith@qualitestgroup.com");
+		
+		r.delay(1000);
+		r.keyPress(KeyEvent.VK_DOWN);
+		r.delay(1000);
+		r.keyRelease(KeyEvent.VK_DOWN);
+		r.delay(1000);
+		r.keyPress(KeyEvent.VK_ENTER);
+	    r.delay(1000);
+		r.keyRelease(KeyEvent.VK_ENTER);
+		
+		kk.cardv().click();
+		kk.commentv().sendKeys("Good Work");
+		kk.sendv().click();
+		r.delay(10000);
+		if(	dri.findElement(By.xpath("//form[@name='shoutout_form']/div[2]/div/span/center")).getText().equalsIgnoreCase("Mailer Error: SMTP connect() failed."))
+		{
+			kk.canclev().click();
+		}
+		r.delay(1000);
+		dri.navigate().refresh();
+		a.kudosm().click();
+		r.delay(1000);
+		String n=dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/b[2]")).getText();
+		String nn=dri.findElement(By.xpath("//h5[@class='header-font-size'][1]/b[1]")).getText();
+		Assert.assertFalse(n.contentEquals(nn));
+		
 	}
+	
 	
 	@AfterTest
 	public void exit() {
